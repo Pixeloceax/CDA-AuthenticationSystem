@@ -2,9 +2,9 @@ require("dotenv").config({ path: "./config.env" });
 
 import express from "express";
 
-import { connectDB } from "./config/db";
+import connectDB from "./config/db";
 
-import { errorHandler } from "./middleware/errorMiddleware";
+import errorHandler from "./middleware/errorMiddleware";
 import verifyToken from "./middleware/authMiddleware";
 
 import authRoutes from "./routes/authRoutes";
