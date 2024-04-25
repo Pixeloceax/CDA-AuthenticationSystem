@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 
 const userModel = require("../models/userModel");
 
-export const userController = async (req: Request, res: Response) => {
+export const getUserInformation = async (req: Request, res: Response) => {
   try {
     const user = await userModel.findOne({ _id: req.user });
 
