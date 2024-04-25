@@ -4,8 +4,8 @@ import express from "express";
 
 import connectDB from "./config/db";
 
-import errorHandler from "./middleware/errorMiddleware";
-import verifyToken from "./middleware/authMiddleware";
+import errorHandler from "./middlewares/errorMiddleware";
+import verifyToken from "./middlewares/authMiddleware";
 
 import authRoutes from "./routes/authRoutes";
 import userRoutes from "./routes/userRoutes";
