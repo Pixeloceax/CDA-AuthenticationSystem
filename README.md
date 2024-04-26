@@ -42,6 +42,12 @@ npm install
    CORS_ALLOW_ORIGIN=<ORIGIN>
    ```
 
+   Generate a secure JWT secret key effortlessly using Node.js:
+
+   ```
+   node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+   ```
+
 ## Usage
 
 1. Start the server:
