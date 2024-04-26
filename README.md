@@ -84,20 +84,20 @@ To deploy the Authentication System application using Docker in a production env
 1. Build the Docker Image
    Before deploying the application, you need to build a Docker image using the provided Dockerfile. Run the following command in the root directory of the project:
 
-```
-docker build -t authentication-system:latest ./
-```
+   ```
+   docker build -t authentication-system:latest ./
+   ```
 
-This command will build a Docker image tagged as authentication-system:latest using the Dockerfile in the current directory.
+   This command will build a Docker image tagged as authentication-system:latest using the Dockerfile in the current directory.
 
 2. Run the Docker Container
    Once the Docker image is built, you can run a Docker container using the following command:
 
-```
-docker run -p <YOUR_PORT>:<YOUR_PORT> authentication-system:latest
-```
+   ```
+   docker run -p <YOUR_PORT>:<YOUR_PORT> authentication-system:latest
+   ```
 
-This command will start a Docker container and map port <YOUR_PORT> on the host machine to port <YOUR_PORT> inside the container.
+   This command will start a Docker container and map port <YOUR_PORT> on the host machine to port <YOUR_PORT> inside the container.
 
 3. Access the Application
    After the container is running, you can access the Authentication System application by sending HTTP requests to the appropriate endpoint.
