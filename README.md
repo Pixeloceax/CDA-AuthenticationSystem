@@ -53,7 +53,7 @@ npm install
 1. Start the server:
 
 ```
-npm start
+npm run dev
 ```
 
 The server will be accessible at `http://localhost:<YOUR_PORT>`.
