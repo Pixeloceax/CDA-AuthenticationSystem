@@ -39,3 +39,18 @@ export const updateUserInformation = async (req: Request, res: Response) => {
     throw new Error(`UPDATE USER ERROR : ${error}`);
   }
 };
+
+export const deleteUser = async (req: Request, res: Response) => {
+  try {
+    const user = await userModel.findOne({ _id: req.user });
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    await user.deleteOne();
+
+    res.status(200).json("User deleted");
+  } catch (error) {
+    throw new Error(`DELETE USER ERROR : ${error}`);
+  }
+};
