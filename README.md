@@ -35,7 +35,7 @@ npm install
    Create a `config.env` file in the project root and configure the following variables:
 
    ```env
-   PORT=<PORT>
+   PORT=<YOUR_PORT>
    MONGO_URI=<MONGO_CONNECTION_STRING>
    JWT_SECRET=<JWT_SECRET>
    JWT_EXPIRE=<EXPIRE_TIME>
@@ -50,7 +50,7 @@ npm install
 npm start
 ```
 
-The server will be accessible at `http://localhost:3000`.
+The server will be accessible at `http://localhost:<YOUR_PORT>`.
 
 2. Using the API:
 
