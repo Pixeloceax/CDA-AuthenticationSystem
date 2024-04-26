@@ -2,9 +2,10 @@
   "name": "cda-authenticationsystem",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "nodemon dist/server.js",
+    "dev": "nodemon dist/server.js",
+    "start": "node dist/server.js",
     "build": "tsc"
   },
   "keywords": [],
