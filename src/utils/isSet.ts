@@ -1,3 +1,3 @@
-export default function isset(value: any): boolean {
+export default function isSet(value: any): boolean {
   return typeof value !== "undefined" && value !== null;
 }

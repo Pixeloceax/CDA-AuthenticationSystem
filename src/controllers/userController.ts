@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import isset from "../utils/isset";
+import isSet from "../utils/isSet";
 
 const userModel = require("../models/userModel");
 
@@ -24,9 +24,9 @@ export const updateUserInformation = async (req: Request, res: Response) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    if (isset(req.body)) {
+    if (isSet(req.body)) {
       Object.keys(req.body).forEach((key) => {
-        if (isset(req.body[key]) && isset(user[key])) {
+        if (isSet(req.body[key]) && isSet(user[key])) {
           user[key] = req.body[key];
         }
       });
